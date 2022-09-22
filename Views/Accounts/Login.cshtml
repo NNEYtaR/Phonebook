@@ -1,0 +1,14 @@
+@model Phonebook.Models.Account
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div id="login">
+    <form asp-action="Login" asp-area="Accounts" method="post">
+        <input asp-for="Username" name="username" type="text" id="username" placeholder="Username" required>
+        <input asp-for="Password" name="password" type="password" id"password" placeholder="Password" required>
+        <input type="submit" value="Login">
+        don't have account? <a asp-action="Register" asp-controller="Accounts" >Register</a>
+    </form>
+</div>
+

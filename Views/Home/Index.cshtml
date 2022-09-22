@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Context.Session.GetString("username")</h1>
+    <a asp-controller="Accounts" asp-action="Logout" type="button" class="btn btn-danger btn-sm">Logout</a>
+</div>

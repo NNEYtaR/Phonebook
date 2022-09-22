@@ -1,0 +1,15 @@
+@model Phonebook.Models.Account
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<div id="login">
+    <form asp-action="Register" asp-area="Accounts" method="post">
+        <input asp-for="Username" name="username" type="text" id="username" placeholder="Username" required>
+        <input asp-for="Email" name="email" type="email" id="email" placeholder="E-mail" required>
+        <input asp-for="Password" name="password" type="password" id"password" placeholder="Password" required>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <input type="submit" value="Register">
+        have account? <a asp-action="Login" asp-controller="Accounts" >Login</a>
+    </form>
+</div>

@@ -1,0 +1,69 @@
+@import 'https://fonts.googleapis.com/css?family=Lalezar';
+
+body,
+html {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lalezar', cursive;
+}
+
+#welcome-slide {
+    animation: backAn 200s infinite;
+    background: url(http://riccardotartaglia.it/img/blend/back.jpg);
+    background-color: #cdc8c4;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#welcome-slide #grizzly {
+    mix-blend-mode: lighten;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+#welcome-slide #claim {
+    position: absolute;
+    bottom: 60px;
+    left: calc(50% - 100px);
+    margin: auto;
+    z-index: 3;
+    color: #ccc7c3;
+}
+
+#welcome-slide #claim h1 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 0em;
+    text-align: center;
+}
+
+#welcome-slide #claim h2 {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@keyframes backAn {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
